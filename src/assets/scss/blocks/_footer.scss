@@ -1,0 +1,9 @@
+.footer {
+  position: relative;
+  display: grid;
+  align-items: center;
+  height: 100px;
+  &__wrapper {
+    position: relative;
+  }
+}

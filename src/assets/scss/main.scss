@@ -1,0 +1,31 @@
+// подключаем шрифт online
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet');
+// подключаем стили через NodeModules
+//@import "~normalize.css";
+
+// UTILS
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/media";
+@import "utils/fonts";
+
+// COMPONENTS
+@import 'components/reset';
+@import 'components/media';
+@import 'components/main';
+@import 'components/title';
+@import 'components/buttons';
+@import 'components/sidepanel';
+@import 'components/menu';
+@import 'components/swiper';
+
+// BLOCKS
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+
+// LIBS

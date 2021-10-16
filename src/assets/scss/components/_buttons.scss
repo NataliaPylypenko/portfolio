@@ -1,0 +1,30 @@
+.buttons-group {
+  .btn {
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 12px 26px;
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover {
+      text-decoration: none;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .btn__color{
+    color: #fff;
+    background-color: $main-color;
+    &:hover {
+      color: #000;
+      background-color: $main-color;
+    }
+  }
+  .btn__transparent{
+    color: $main-color;
+    background-color: transparent;
+    &:hover {
+      color: #000;
+      background-color: $main-color;
+    }
+  }
+}

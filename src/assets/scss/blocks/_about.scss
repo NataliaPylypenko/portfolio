@@ -1,0 +1,134 @@
+.about {
+  padding: 120px 0 60px;
+  @media #{$mobile}{
+    padding: 40px 0 30px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template: auto / 400px auto;
+    column-gap: 70px;
+    @media #{$laptop}{
+      grid-template: auto / 300px auto;
+      column-gap: 40px;
+    }
+    @media #{$mobile}{
+      grid-template: 350px auto / auto;
+      row-gap: 40px;
+    }
+  }
+  &__photo {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__descr {
+    padding-top: 6px;
+    .divider {
+      margin: 0;
+    }
+  }
+  &__text-wrapper {
+    margin-top: 20px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: calc(100% - 15px);
+    max-width: 800px;
+    @media #{$desktopMax} {
+      max-width: 620px;
+    }
+    @media #{$laptop} {
+      max-width: 570px;
+    }
+    @media #{$tablet} {
+      max-width: 330px;
+    }
+    @media #{$mobile} {
+      flex: initial;
+      max-width: 285px;
+    }
+    &.scrollbar-invisible {
+      .content-shadow {
+        //display: none;
+      }
+    }
+    .content-shadow {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      box-shadow: inset 0 -8px 8px -8px #f9f6ff, inset 0 10px 8px -8px #f9f6ff;
+    }
+    .content-shadow.top {
+      box-shadow: inset 0 140px 140px -80px #f9f6ff;
+      @media #{$laptop} {
+        box-shadow: inset 0 37px 91px -7px #f9f6ff;
+      }
+      @media #{$tablet} {
+        box-shadow: inset 0 93px 168px -80px #f9f6ff;
+      }
+      @media #{$mobile} {
+        box-shadow: inset 0 115px 116px -80px #f9f6ff;
+      }
+    }
+    .content-shadow.bottom {
+      box-shadow: inset 0 -140px 140px -80px #f9f6ff;
+      @media #{$laptop} {
+        box-shadow: inset 0 -37px 91px -7px #f9f6ff;
+      }
+      @media #{$tablet} {
+        box-shadow: inset 0 -93px 168px -80px #f9f6ff;
+      }
+      @media #{$mobile} {
+        box-shadow: inset 0 -115px 116px -80px #f9f6ff;
+      }
+    }
+  }
+  &__text {
+    padding-left: 15px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: visible !important;
+    background: transparent;
+    width: 100%;
+    cursor: initial;
+    @media #{$laptop} {
+      height: 400px;
+    }
+    @media #{$tablet} {
+      height: 350px;
+    }
+    .os-padding {
+      z-index: initial;
+    }
+    .os-scrollbar.os-scrollbar-vertical {
+      padding: 0;
+      left: -8px!important;
+      width: 10px;
+      .os-scrollbar-track {
+        position: absolute;
+        right: 0 !important;
+      }
+      .os-scrollbar-track.os-scrollbar-track-off {
+        background: #e0e0e0 !important;
+        width: 20% !important;
+        .os-scrollbar-handle {
+          background: $main-color !important;
+          width: 100% !important;
+          right: 0;
+        }
+      }
+    }
+  }
+}

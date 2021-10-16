@@ -1,0 +1,98 @@
+.resume {
+  padding: 60px 0;
+  @media #{$mobile}{
+    padding: 30px 0;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 130px;
+    padding: 0 65px;
+    @media #{$laptop}{
+      column-gap: 60px;
+    }
+    @media #{$tablet}{
+      column-gap: 40px;
+      padding: 0;
+    }
+    @media #{$mobile}{
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
+  &__column {
+    &-title {
+      position: relative;
+      padding-left: 35px;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: -7px;
+        transform: translateY(-50%);
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: $main-color;
+        border-radius: 50%;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          top: -16px;
+          left: 0;
+          width: 1px;
+          height: calc(100% + 16px);
+          background-color: #000;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 57px;
+      height: 1px;
+      width: 43px;
+      background-color: #000;
+      @media #{$mobile}{
+        top: 40px;
+        width: 35px;
+      }
+    }
+    &-head {
+      position: relative;
+      padding-top: 45px;
+      padding-left: 100px;
+      @media #{$mobile}{
+        padding-top: 30px;
+        padding-left: 50px;
+      }
+    }
+    &-icon {
+      position: absolute;
+      top: 45px;
+      left: 43px;
+      width: 25px;
+      @media #{$mobile}{
+        display: none;
+      }
+      img {
+        position: absolute;
+        top: 14px;
+        left: 17px;
+      }
+    }
+    &-body {
+      margin-top: 12px;
+      padding-left: 43px;
+    }
+
+  }
+}
