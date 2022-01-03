@@ -18,4 +18,3 @@ const buildWebpackConfig = merge(baseWebpackConfig, {
 module.exports = new Promise((resolve, reject) => {  // експортируем настройку
   resolve(buildWebpackConfig) // через resolve отправляем buildWebpackConfig
 })
-// 25.00
