@@ -2,24 +2,30 @@ function swiperPortfolio() {
 
     const showSlider = new Swiper('.portfolio-carousel', {
         loop: true,
-        slidesPerView: 5,
+        slidesPerView: 1,
         slidesPerGroup: 1,
-        // slidesPerView: 'auto',
-        spaceBetween: 30,
+        spaceBetween: 15,
         speed: 1800,
         centeredSlides: true,
-
-        // watchOverflow: true,
         autoplay: {
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
             waitForTransition: false,
         },
-
-        // navigation: {
-        //     nextEl: '.showcase-navigation__next',
-        //     prevEl: '.showcase-navigation__prev'
-        // }
+        breakpoints: {
+            1199: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            }
+        }
     })
 
 }

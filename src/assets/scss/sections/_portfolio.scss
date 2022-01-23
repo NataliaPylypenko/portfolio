@@ -1,7 +1,7 @@
 @import "../utils/vars";
 
 .portfolio {
-  background-color: #000;
+  background-color: rgba(#000, .9);
   position: relative;
   color: #fff;
   overflow: hidden;
@@ -30,6 +30,15 @@
     position: relative;
     z-index: 2;
     padding: 180px 0;
+    @media #{$desktopMax}{
+      padding: 160px 0;
+    }
+    @media #{$tablet}{
+      padding: 140px 0;
+    }
+    @media #{$mobile}{
+      padding: 120px 0;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -54,6 +63,9 @@
     font-family: $ff_accent, sans-serif;
     font-size: 32px;
     color: rgba(255, 255, 255, .75);
+    @media #{$tablet}{
+      top: 40px;
+    }
     span {
       color: $primary;
     }
@@ -70,6 +82,18 @@
     opacity: .3;
     transform: scale(.67);
     transition: opacity 1.8s $transition, transform 1.8s $transition;
+    @media #{$desktopMax}{
+      height: 320px;
+    }
+    @media #{$laptop}{
+      height: 280px;
+    }
+    @media #{$tablet}{
+      height: 250px;
+    }
+    @media #{$mobile}{
+      height: 220px;
+    }
     &::after {
       content: '';
       width: 120px;
