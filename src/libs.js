@@ -1,8 +1,11 @@
 // JS libs
-import './js/libs/OverlayScrollbars.js'
-import './js/libs/swiper-bundle.js'
+import './js/libs/bootstrap/bootstrap.bundle.min'
+import './js/libs/overlayScrollbar/OverlayScrollbars.js'
+import './js/libs/swiper/swiper-bundle.min'
 
 // SCSS libs
-import './assets/scss/libs/bootstrap-reboot.min.scss'
-import './assets/scss/libs/OverlayScrollbars.css'
-import './assets/scss/libs/swiper-bundle.css'
+import './assets/scss/libs/bootstrap/bootstrap-reboot.min.css'
+import './assets/scss/libs/bootstrap/bootstrap-grid.min.css'
+import './assets/scss/libs/bootstrap/bootstrap.min.css'
+import './assets/scss/libs/overlayScrollbar/OverlayScrollbars.css'
+import './assets/scss/libs/swiper/swiper-bundle.min.css'

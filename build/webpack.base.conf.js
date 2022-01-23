@@ -29,9 +29,9 @@ module.exports = {
   },
   // точка входа
   entry: {
-    app: PATHS.src, // путь к входному файлу js
     // module: `${PATHS.src}/your-module.js`,
-    libs: `${PATHS.src}/libs.js` // путь к библиотекам подключенным не через NM или другие файлы js
+    libs: `${PATHS.src}/libs.js`, // путь к библиотекам подключенным не через NM или другие файлы js
+    app: PATHS.src, // путь к входному файлу js
   },
   // точка выхода
   output: {
@@ -44,7 +44,7 @@ module.exports = {
       publicPath: '/' - relative path for dist folder (js,css etc)
       publicPath: './' (dot before /) - absolute path for dist folder (js,css etc)
     */
-    publicPath: './'
+    publicPath: '/'
   },
   //Ускоряем загрузку JavaScripts благодаря Code Splitting в вебпаке!
   optimization: {

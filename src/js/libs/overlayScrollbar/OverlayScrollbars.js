@@ -3582,7 +3582,7 @@
                         contentGlueElementCSS[_strMaxMinus + _strWidth] = _strEmpty; //IE Fix
                     }
                     if (widthAuto) {
-                        //textareaDynOrigSize.w || _strAuto :: doesnt works because applied margin will shift width
+                        //textareaDynOrigSize.w || _strAuto :: doesnt portfolio because applied margin will shift width
                         contentGlueElementCSS[_strWidth] = _strAuto;
 
                         contentElementCSS[_strWidth] = VENDORS._cssPropertyValue(_strWidth, 'max-content intrinsic') || _strAuto;

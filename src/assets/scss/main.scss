@@ -4,27 +4,28 @@
 //@import "~normalize.css";
 
 // UTILS
-@import "utils/variables";
-@import "utils/mixins";
 @import "utils/media";
-@import "utils/fonts";
+@import "utils/mixins";
+@import 'utils/reset';
+@import "utils/vars";
 
 // COMPONENTS
-@import 'components/reset';
-@import 'components/media';
-@import 'components/main';
-@import 'components/title';
 @import 'components/buttons';
-@import 'components/sidepanel';
+@import 'components/main';
+@import 'components/media';
 @import 'components/menu';
-@import 'components/swiper';
+@import 'components/page-content';
+@import 'components/sidepanel';
+@import 'components/title';
 
-// BLOCKS
-@import 'blocks/header';
-@import 'blocks/about';
-@import 'blocks/resume';
-@import 'blocks/skills';
-@import 'blocks/portfolio';
-@import 'blocks/footer';
+// SECTIONS
+@import 'sections/header';
+@import 'sections/footer';
 
-// LIBS
+@import 'sections/about';
+@import 'sections/portfolio';
+@import 'sections/resume';
+@import 'sections/skills';
+
+
+
